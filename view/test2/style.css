@@ -47,7 +47,7 @@ body {
 .btn-reservation {
     margin-right: 25px;
     margin-left: 25px;
-    min-width: 135px;
+    min-width: 100px;
     text-align: center;
     text-decoration: none;
     padding: 5px;
@@ -63,6 +63,37 @@ a:hover {
 }
 
 /* --------------RESPONSIVE DU HEADER ET DE LA NAVBAR-------------- */
+
+@media screen and (min-width: 780px) and (max-width: 979px){
+        .navigation {
+            flex-flow: row wrap;
+    }
+}
+
+@media(min-width:250px) and (max-width: 779px){
+    .navigation {
+        display: flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        max-height: 150px;
+    }
+    .logo {
+        margin-right: 2px;
+        margin-bottom: 3px;
+    }
+    .lien-navigation{
+       width: auto;
+        margin-left: 5px;
+        padding: 0;
+    }
+    .lien-navigation a {
+        font-size: 15px;
+    }
+    .btn-reservation {
+        font-size: 15px;
+        margin-top: 3px;
+    }
+}
 
 
 
