@@ -1,0 +1,68 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Hind Madurai, Arial, sans-serif;
+    background-color: #B6AC97;
+}
+
+/* --------------CREATION DU HEADER ET DE LA NAVBAR-------------- */
+
+.navigation {
+    background-color: saddlebrown;
+    width: 100%;
+    display: flex;
+    z-index: 99;
+    position: fixed;
+    padding: 10px;
+    margin: 5px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgba(34,34,34,0.4);
+}
+
+.flex-item {
+    padding: 30px
+}
+
+.logo {
+    max-width: 100px;
+    max-height: 75px;
+    border-radius: 5px;
+    margin-right: 25px;
+}
+
+.lien-navigation a {
+    padding-right: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    color: floralwhite;
+    font-size: 23px;
+}
+
+.btn-reservation {
+    margin-right: 25px;
+    margin-left: 25px;
+    min-width: 135px;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px;
+    color: floralwhite;
+    font-size: 23px;
+    border: solid black 1px;
+    border-radius: 10px;
+    background-color: #906427;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --------------RESPONSIVE DU HEADER ET DE LA NAVBAR-------------- */
+
+
+

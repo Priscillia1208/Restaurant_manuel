@@ -1,0 +1,137 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Hind Madurai, Arial, sans-serif;
+    background-color: #B6AC97;
+}
+
+/* --------------CREATION DU HEADER ET DE LA NAVBAR-------------- */
+
+header {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    max-height: 150px;
+    display: flex;
+    align-items: center;
+    background-color: #906427;
+    padding: 10px 15px;
+    border-bottom: 1px solid rgba(34,34,34,0.4);
+}
+
+.center-presentation {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo {
+    margin-right: 20px;
+    margin-left: 50px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.presentation-restaurant {
+    margin-right: 200px;
+}
+
+.presentation-restaurant img {
+    width: 300px;
+    height: auto;
+}
+
+.logo img {
+    width: 200px;
+    height: auto;
+}
+
+nav {
+    margin: 0 auto;
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.toggler-container {
+    width: 100%;
+}
+
+.toggler-container {
+    display: none;
+}
+
+.navigation a {
+    margin-right: 10px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: Montserrat, sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    padding-right: 30px;
+}
+
+.container-btn {
+    display: flex;
+}
+
+.container-btn button {
+    border: 1px solid black;
+    margin-right: 15px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: sandybrown;
+    color: white;
+    cursor: pointer;
+    min-width: 135px;
+}
+
+.btn {
+    text-decoration: none;
+    cursor: pointer;
+    color: white;
+}
+
+
+@media (max-width: 960px) {
+    .toggler-container{
+        display: block;
+    }
+    .toggler-container button {
+        padding: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .toggler-container img {
+        width: 18px;
+    }
+    .navigation {
+        position: absolute;
+        width: 240px;
+        background-color: white;
+        height: calc(100vh - 100% - 1px);
+        left: 0;
+        top: calc(100% + 1px);
+        padding-top: 20px;
+        transition: transform 0.4s ease-out;
+        transform: translateX(-100%);
+    }
+    .navigation.active{
+        transform: translateX(0%);
+    }
+    .navigation a {
+        display: block;
+        margin: 14px 0;
+        padding: 0 20px;
+    }
+
+}
